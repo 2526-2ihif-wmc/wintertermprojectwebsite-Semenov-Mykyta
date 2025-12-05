@@ -1,118 +1,206 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-}
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
 
-header {
-  background-color: #111;
-  color: white;
-  padding: 20px 0;
-}
+  header {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+  }
 
-header .container {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h1 {
-  font-size: 2rem;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-section {
-  padding: 40px 0;
-}
-
-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-section p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-section img {
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin-top: 20px;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 20px;
-}
-
-ul li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  margin-top: 20px;
-}
-
-footer {
-  background-color: #111;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
   header .container {
-    flex-direction: column;
-    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
   }
 
   nav ul {
-    margin-top: 10px;
+    list-style-type: none;
   }
 
   nav ul li {
-    margin-right: 15px;
-    display: block;
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  section p {
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   section img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-top: 20px;
   }
+
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+
+  ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #111;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav ul {
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin-right: 15px;
+      display: block;
+    }
+
+    section img {
+      max-width: 100%;
+    }
+  }
+
+.cards-section {
+  padding: 40px 20px;
+  background: #f2f4ff;
+}
+
+.cards-section .section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Card layout */
+.cards-section .card-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cards-section .card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background 0.25s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-section .card .Budapest {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.cards-section .card .Austin {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.cards-section .card .Shanghai {
+  width: 100%;
+  height: 110%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.cards-section .card .Coppenhagen {
+  margin-left: 25%;
+  width: 50%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+/* Hover / Touch effect */
+.cards-section .card:hover,
+.cards-section .card:active {
+  background: #f5f7ff;
+  transform: translateY(-4px);
+}
+
+.cards-section .card p {
+  flex-grow: 1;
+  color: #555;
+}
+
+/* Button */
+.cards-section .card-btn {
+  background: #4a6cff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 14px;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.cards-section .card-btn:hover {
+  background: #3a55d4;
+}
+
+.cards-section .card-btn:active {
+  transform: scale(0.95);
+}
+.Austin-text{
+  margin-top: 10%;
 }
