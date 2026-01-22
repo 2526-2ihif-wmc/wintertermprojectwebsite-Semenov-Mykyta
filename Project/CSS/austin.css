@@ -1,0 +1,161 @@
+/* ===================== RESET ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ===================== HEADER ===================== */
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+
+header .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* ===================== HERO ===================== */
+.hero-div {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Фон с картинкой и фильтром для яркости */
+.hero-div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+  filter: brightness(1.5) contrast(1.2);
+}
+
+/* Текст поверх картинки */
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.55); /* полупрозрачный блок под текстом */
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 1rem;
+  opacity: 0.85;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* ===================== SECTIONS ===================== */
+section {
+  padding: 60px 0;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+/* ===================== DARK SECTION ===================== */
+.dark-section {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ===================== TEAMS ===================== */
+.teams-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  list-style: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.teams-list li {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.teams-list li:hover {
+  transform: translateY(-5px);
+  background: #2c2c2c;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #000;
+  font-size: 0.9rem;
+  opacity: 0.75;
+  border-top: 1px solid #222;
+}
+.teams-link a{
+  text-decoration: none;
+  color: #ffff;
+}
+.teams-link {
+    text-decoration: none;
+    color: #ffff;
+  }
