@@ -1,27 +1,23 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {  
+body {
   font-family: Arial, sans-serif;
-  backdrop-filter: blur(3px); 
+  backdrop-filter: blur(3px);
   color: #333;
   line-height: 1.6;
   background-color: #111;
 }
-
-/* HEADER */
-
 
 header {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; 
+  z-index: 1000;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
@@ -33,7 +29,6 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
-
 
 nav ul {
   list-style: none;
@@ -51,7 +46,6 @@ nav a:hover {
   opacity: 0.7;
 }
 
-
 section {
   padding: 60px 0;
   position: relative;
@@ -64,20 +58,16 @@ section h2 {
   text-align: center;
 }
 
-
-
-
 .content {
   position: relative;
   z-index: 5;
   color: white;
 }
 
-
 .cards-section {
   padding: 50px 20px;
-  background: rgba(0, 0, 0, 0.6); 
-  backdrop-filter: blur(3px); 
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
   color: white;
 }
 
@@ -87,15 +77,14 @@ section h2 {
   margin-bottom: 25px;
 }
 
-
 .card-group {
   margin-top: 2%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
-  justify-items: center; 
-
+  justify-items: center;
 }
+
 .card {
   background: #fff;
   color: #333;
@@ -113,26 +102,29 @@ section h2 {
   transform: translateY(-4px);
 }
 
-
 .card-budapest,
 .card-austin,
 .card-copenhagen {
-  margin-bottom: 100% ;
-}
-
-.card-shanghai{
   margin-bottom: 100%;
 }
-.Budapest-text{
+
+.card-shanghai {
+  margin-bottom: 100%;
+}
+
+.Budapest-text {
   margin-top: 30px;
 }
-.Shanghai-text{
+
+.Shanghai-text {
   margin-top: 95px;
 }
-.Austin-text{
+
+.Austin-text {
   margin-top: 50px;
 }
-.Shanghai{
+
+.Shanghai {
   margin-top: 20%;
 }
 
@@ -145,7 +137,6 @@ section h2 {
   object-fit: contain;
 }
 
-/* CARD TEXT */
 .card-title {
   font-size: 1.4rem;
   font-weight: bold;
@@ -163,7 +154,6 @@ section h2 {
   margin-bottom: 20px;
 }
 
-
 .card-btn {
   background: #4a6cff;
   color: white;
@@ -173,14 +163,13 @@ section h2 {
   cursor: pointer;
   transition: background 0.25s;
   font-size: 0.95rem;
-  text-align: center; 
-  width: 100%; 
+  text-align: center;
+  width: 100%;
 }
 
 .card-btn:hover {
   background: #3a55d4;
 }
-
 
 .btn {
   display: inline-block;
@@ -191,17 +180,17 @@ section h2 {
   border-radius: 6px;
   font-size: 1rem;
 }
+
 #download a {
   color: white;
   text-decoration: none;
 }
+
 #download a:hover {
   text-decoration: underline;
   opacity: 0.7;
 }
-#download{
+
+#download {
   text-align: center;
 }
-
-
-
